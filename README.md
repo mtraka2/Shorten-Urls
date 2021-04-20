@@ -13,7 +13,7 @@
 - The first one is a folder which contains reusable components.
 - The second one is a folder which contains layout components.
 - I connected the backend with axios library.
-- After hitting Get shortended url, the frontend would call /api/url/shorten
+- After hitting 'Get shortended url' button, the frontend would call /api/url/shorten from the backend
 - After getting a short link, we can click Go to check if it goes to the the right path.
 
 ### Back end
