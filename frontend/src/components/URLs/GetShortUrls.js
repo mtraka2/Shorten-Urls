@@ -19,7 +19,6 @@ const GetURLs = (props) =>{
                     "Content-Type":"application/json"
                 },
             }).then((res)=>{
-                console.log(res);
                 setEnteredUrl('')
                 props.onGetShortUrl(res.data.shortUrl,res.data.urlCode)
         });

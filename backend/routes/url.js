@@ -8,11 +8,9 @@ const Url = require('../models/Url')
 
 
 //@route POST request /api/url/shorten
-//@desc Creat short URL
 router.post('/shorten',async (req,res)=>{
-    console.log("here")
+
     const {longUrl} = req.body;
-    console.log("longUrl",req)
     const baseUrl = config.get('baseUrl');
 
     if(!validUrl.isUri(baseUrl)){
@@ -28,7 +26,6 @@ router.post('/shorten',async (req,res)=>{
             let url = await Url.findOne({longUrl});
 
             if(url){
-                console.log("here")
                 await res.json(url);
             }else{
                 const shortUrl = baseUrl + '/' + urlCode;
