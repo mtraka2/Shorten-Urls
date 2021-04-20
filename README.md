@@ -29,6 +29,7 @@
 - As for the front end, I will add an alert in case url is not validated
 - I will add a counter in case the generated id does already exist, avoiding collision.
 - I will implement the encoding of the long URL myself.
+- I will write a unit test.
 
 
 
